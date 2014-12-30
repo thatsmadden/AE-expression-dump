@@ -1,0 +1,6 @@
+a=thisComp.layer("NullA").toWorld([0,0,0]);
+b=thisComp.layer("NullB").toWorld([0,0,0]);
+wh=thisLayer.effect("weight")("Slider");
+aW=a*(Math.abs(1-wh));
+bW=b*wh;
+aW+bW
