@@ -1,5 +1,7 @@
 // This is a messy way to calculate a minimum enclosing shape given a set of 2D points. Just replace the "points[0]=.... ;" section with your own selection of points.
 
+// The expression uses a Graham scan to find the points on the outer edge of the shape-- utilizing a cross product to find the point with the greatest "left-turn" for the next vertex on the hull.
+
 // It's meant to go on a path shape-- either a mask path or a Shape Layer path.
 
 function indexOfMin(arr) { // find index of point that has the lowest x-position.
